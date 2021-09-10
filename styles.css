@@ -1,0 +1,132 @@
+:root {
+  --main: #333333;
+
+  --font-main: #ffffff;
+  --font-secondary: #000000;
+  --font-additional: #aaaaaa;
+
+  --font-header: 16px;
+}
+
+body {
+  background: rgb(204, 204, 204);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+page {
+  position: relative;
+  background: white;
+  display: grid;
+  grid-template-areas: "left-column main-column";
+  grid-template-columns: 25% 75%;
+  width: 21cm;
+  height: 29.7cm;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+section {
+  width: 100%;
+  margin-top: 20px;
+}
+
+a {
+  color: var(--font-main);
+  text-decoration: none;
+}
+
+.icon_wrapper {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.contact {
+  list-style-type: none;
+  align-self: flex-start;
+}
+
+.contact > li {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin: 10px 0 10px -35px;
+}
+
+.name_head {
+  position: absolute;
+  display: flex;
+  width: calc(21cm - 115px);
+  background: var(--font-additional);
+  left: 100px;
+  top: 15px;
+  height: 85px;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.name_head > h2 {
+  margin-left: 15%;
+}
+
+.left-area {
+  grid-area: "left-column";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--main);
+  padding: 15px;
+}
+
+.photo-wrapper {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  z-index: 2;
+  object-fit: scale-down;
+  background: white;
+}
+
+.main-area {
+  grid-area: "main-column";
+  display: flex;
+  flex-direction: column;
+  padding: 90px 15px 15px;
+}
+
+.light-text {
+  color: var(--font-main);
+}
+
+.section-header {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--font-header);
+  border-bottom: 3px solid var(--font-additional);
+  letter-spacing: 3px;
+}
+
+.place-paragraph {
+  font-weight: bold;
+}
+
+.date-paragraph {
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.position-paragraph {
+  margin: 0;
+}
+
+.clausure {
+  font-size: 10px;
+  color: var(--font-additional);
+  margin-top: auto;
+}
